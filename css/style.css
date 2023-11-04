@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/*************************** Reset ******************************/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family:'Roboto',"Arial", sans-serif;
+}
+/*********************** End Reset ******************************/
+/* Start header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: -1px 16px;
+}
+.left-section,
+.mid-section,
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.left-section .home {
+    font-size: 3rem;
+    padding: 10px;
+}
+.left-section img {
+    width: 150px;
+}
+.mid-section form {
+    display: flex;
+    align-items: center;
+}
+.mid-section form input {
+    width: 475px;
+    height: 30px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid;
+}
+.mid-section form button {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 45px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+}
+.mid-section form .mic {
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right-section a {
+    margin: 10px;
+    color: black;
+}
+/* end header */
+
+/* Start Container */
+/* Start aside */
+.container {
+    height: calc(100vh - 56px);
+    display: flex;
+    overflow: hidden
+    ;
+}
+aside {
+    background-color: white;
+    height: 100%;
+    width: 280px;
+    overflow-y: auto;
+}
+aside nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+aside nav a.active {
+    background-color: #eeecec;
+    border-radius: 6px;
+}
+aside nav a.active span.active-span {
+    font-weight: bold;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+}
+nav a:hover {
+    background-color: #f0eded;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+nav a .icn {
+    font-size: 26px;
+    color: black;
+}
+nav a .txt {
+    font-size: 16px;
+    color: black;
+    padding-left: 18px;
+}
+nav h2 {
+    padding-left: 15px;
+    padding-bottom: 7px;
+    color: #757676;
+}
+nav div.channel div {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+nav div.channel div img {
+    width: 22px;
+    border-radius: 50px;
+}
+nav div.channel div span {
+    font-size: 15px;
+    color: black;
+    padding-left: 18px;
+}
+/* End aside */
+
+/* start Filters */
+div.filter {
+    position: fixed;
+    left: 235px;
+    top: 56px;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 249px);
+    height: 42px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 5px;
+    background-color: #fafafa;
+}
+div.filter::-webkit-scrollbar {
+    display: none;
+}
+.filter button.filter-option {
+    width: 58px;
+    height: 35px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-right: 7px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.filter button.filter-button {
+    width: 103px;
+    height: 35px;
+    margin: 0 6px;
+    border: none;
+    background-color: #dddbdb;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    cursor: pointer;
+    transition: ba;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: ba;
+    -ms-transition: ba;
+    -o-transition: ba;
+}
+.filter .filter-button:hover {
+    background-color: #afafaf;
+
+}
+/* End Filters */
+
+/* Start Main */
+
+main {
+    /* width: calc(100% - 280px); */
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+} 
+main div.vedio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.vedio-contant {
+    width: 365px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.vedio-img {
+    object-fit: cover;
+    width: 100%;
+    height: 187px;
+}
+main .vedio-contant img {
+    width: 100%;
+    height: 100%;
+}
+main .details {
+    display: flex;
+    align-items: center;
+}
+main .details .creater-img img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+main .details .title {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+main .details .title h2 {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    max-width: 278px;
+    line-height: 2.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+main .details .title p {
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-size: 11px;
+    color: #3f4042;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+main .details .title span {
+    color: #5d6165;
+} 
+.spi {
+    padding-bottom: 20px;
+}
+/* End Main */
+/* End Container */
+
+/* Media Query for screens with a maximum width of 425px */
+@media (max-width:425px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    .mid-section {
+        display: none;
+    }
+    .right-section .display {
+        display: none;
+    }
+    .container {
+        position:relative;
+    }
+    .container .filter {
+        position: absolute;
+        left: 0px;
+        width: fit-content;
+        top: 0;
+        overflow-y: hidden;
+    }
+    .container .filter .dis {
+        display: none;
+    }
+    .filter button.filter-button {
+        width: 52.4px;
+        font-size: 10px;
+    }
+    aside {
+        display: none;
+    }
+}
+/* End Media Query for screens with a maximum width of 425px */
+
+@media (max-width: 768px) {
+    header .mid-section {
+        display: none;
+    }
+    .right-section .display {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    main {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .container .filter {
+        display: none;
+    }
+    .show-sidebar {
+        display: inline;
+        position: fixed;
+        top: 6.2rem;
+        height: 100%;
+    }
+    main div.vedio-container {
+        margin-top: 0px;
+    }
+}
+@media (min-width:800px) and (max-width:1280px) {
+    .container .filter {
+        display: none;
+    }
+}
+
